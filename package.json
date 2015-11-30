@@ -2,7 +2,8 @@
   "name": "Site",
   "repository": "https://github.com/trychameleon/site",
   "version": "0.9.0",
-  "description": "",
+  "description": "A basic site to show the editor (for development)",
+  "license": "MIT",
   "keywords": [
   ],
 	"dependencies": {
