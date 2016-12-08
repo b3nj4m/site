@@ -5,6 +5,7 @@ var express = require('express'),
   path = require('path'),
   reload = require('reload'),
   bodyParser = require('body-parser'),
+  fs = require('fs'),
   logger = require('morgan');
 
 var app = express(),
@@ -24,7 +25,9 @@ app.get('/show', function(req, res) {
   res.sendFile(path.join(publicDir, 'show.html'));
 });
 
-require('node-pow')(app);
+if (fs.existsSync('~/.pow')) {
+  require('node-pow')(app);
+}
 
 var server = http.createServer(app);
 
