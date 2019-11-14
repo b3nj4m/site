@@ -6,7 +6,7 @@
     (function(doc,win,accountToken) {
       var chmln = 'chmln',
         names = 'setup identify alias track set show on off custom help _data'.split(' '),
-        src = 'http://fast.trychameleon.dev/messo/'+accountToken+'/messo.min.js',
+        src = 'http://fast.trychameleon.local/messo/'+accountToken+'/messo.min.js',
         localSrc = win.localStorage && win.localStorage.getItem(chmln+':messo-url');
 
       win[chmln] || (win[chmln] = {});
